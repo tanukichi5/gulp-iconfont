@@ -1,0 +1,45 @@
+/*
+
+アイコンフォントのスタイルです。
+
+*/
+
+// 生成したアイコンフォントを読み込む
+@font-face {
+	font-family: "iconfont";
+	src: url('/fonts/iconfont.eot?1675533488');
+	src: url('/fonts/iconfont.eot?#iefix') format('eot'),
+		url('/fonts/iconfont.woff?1675533488') format('woff'),
+		url('/fonts/iconfont.ttf?1675533488') format('truetype'),
+		url('/fonts/iconfont.svg#iconfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+// アイコンフォントの共通スタイル
+:where(.iconfont) {
+	display: inline-block;
+	font-family: "iconfont";
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// アイコンフォントを表示する疑似要素
+.iconfont-arrow_left:before { content: "\EA01" }
+.iconfont-arrow_right:before { content: "\EA02" }
+.iconfont-search:before { content: "\EA03" }
+.iconfont-user:before { content: "\EA04" }
+
+
+// unicode変数
+$iconfonts: (
+	'arrow_left': \EA01,
+	'arrow_right': \EA02,
+	'search': \EA03,
+	'user': \EA04,
+	
+)!default;
